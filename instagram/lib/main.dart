@@ -27,6 +27,7 @@ class MyPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset:false,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         centerTitle: true,
         elevation: 0.0,
         title: Text('dcu_go_u'),
@@ -77,6 +78,7 @@ class Mynext extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.black,
       child:SingleChildScrollView(
     padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
       child: Column(
