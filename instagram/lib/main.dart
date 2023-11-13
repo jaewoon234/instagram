@@ -140,7 +140,6 @@ class Mynext extends StatelessWidget {
                   ),
                   Container(
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(60, 20, 0, 10),
@@ -380,113 +379,89 @@ class Mynext extends StatelessWidget {
             ),
             Container(
               color: Colors.black,
-              child: SingleChildScrollView(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Column(
                   children: [
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/third.png',
-                          height: 160,
-                          width: 160,
-                          fit: BoxFit.cover,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                    ),
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/first.png',
-                          height: 160,
-                          width: 160,
-                          fit: BoxFit.cover,
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                    ),
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/second.png',
-                          height: 160,
-                          width: 160,
-                          fit: BoxFit.cover,
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+
+                      ],
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            print('is clicked');
+                          },
+                          child: Image.asset(
+                            'assets/images/third.png',
+                            height: 160,
+                            width: 160,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+
+                      ],
+                    ),
+
                   ],
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.black,
-              child: SingleChildScrollView(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/third.png',
-                          height: 163,
-                          width: 160,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/third.png',
-                          height: 160,
-                          width: 160,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 163,
-                      height: 160,
-                      child: InkWell(
-                        onTap: () {
-                          print('is clicked');
-                        },
-                        child: Image.asset(
-                          'assets/images/third.png',
-                          height: 160,
-                          width: 160,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+                )
             ),
           ],
         ),
