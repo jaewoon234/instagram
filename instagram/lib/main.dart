@@ -163,20 +163,20 @@ class Mynext extends StatelessWidget {
             ),
             Container(
                 child: Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Row(
-                //수정
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+                  child: Row(
+                    //수정
                     children: [
-                      Text('대구가톨릭대학교 소프트웨어융합대학'),
-                      Text('제3대 소프트웨어융합대학 학생회 GO:U 💙'),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('대구가톨릭대학교 소프트웨어융합대학'),
+                          Text('제3대 소프트웨어융합대학 학생회 GO:U 💙'),
+                        ],
+                      )
                     ],
-                  )
-                ],
-              ),
-            )),
+                  ),
+                )),
             Container(
               child: Padding(
                   padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
@@ -189,20 +189,20 @@ class Mynext extends StatelessWidget {
                               Container(
                                 child: CircleAvatar(
                                   backgroundImage:
-                                      AssetImage('assets/images/friend.jpeg'),
+                                  AssetImage('assets/images/friend.jpeg'),
                                 ),
                               ),
                               Container(
                                 child: CircleAvatar(
                                   backgroundImage:
-                                      AssetImage('assets/images/freind2.png'),
+                                  AssetImage('assets/images/freind2.png'),
                                 ),
                                 padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                               ),
                               Container(
                                 child: CircleAvatar(
                                   backgroundImage:
-                                      AssetImage('assets/images/friend3.png'),
+                                  AssetImage('assets/images/friend3.png'),
                                 ),
                                 padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
                               ),
@@ -237,7 +237,7 @@ class Mynext extends StatelessWidget {
                                                     text: '이 팔로우합니다.',
                                                     style: TextStyle(
                                                         fontWeight:
-                                                            FontWeight.w100)),
+                                                        FontWeight.w100)),
                                               ])
                                         ])
                                   ])
@@ -250,54 +250,54 @@ class Mynext extends StatelessWidget {
             ),
             Container(
                 child: Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      print('is clicked');
-                    },
-                    child: Text('팔로우'),
-                    style: ElevatedButton.styleFrom(
-                        minimumSize: Size(210, 45),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        )),
+                  padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          print('is clicked');
+                        },
+                        child: Text('팔로우'),
+                        style: ElevatedButton.styleFrom(
+                            minimumSize: Size(210, 45),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            )),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            print('is clicked');
+                          },
+                          child: Text('메세지'),
+                          style: ElevatedButton.styleFrom(
+                              minimumSize: Size(210, 45),
+                              backgroundColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              )),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(3, 0, 10, 0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            print('is clicked');
+                          },
+                          child: Icon(Icons.perm_identity),
+                          style: ElevatedButton.styleFrom(
+                              minimumSize: Size(2, 45),
+                              backgroundColor: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              )),
+                        ),
+                      ),
+                    ],
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        print('is clicked');
-                      },
-                      child: Text('메세지'),
-                      style: ElevatedButton.styleFrom(
-                          minimumSize: Size(210, 45),
-                          backgroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          )),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(3, 0, 10, 0),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        print('is clicked');
-                      },
-                      child: Icon(Icons.perm_identity),
-                      style: ElevatedButton.styleFrom(
-                          minimumSize: Size(2, 45),
-                          backgroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          )),
-                    ),
-                  ),
-                ],
-              ),
-            )),
+                )),
             Container(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(10, 30, 40, 0),
@@ -379,90 +379,85 @@ class Mynext extends StatelessWidget {
             ),
             Container(
               color: Colors.black,
-                child: Column(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Wrap(
+                  direction: Axis.horizontal,
+                  spacing: 2.0, // Optional: 조절 가능한 간격
+                  runSpacing: 2.0, // Optional: 줄 간격
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-
-                      ],
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/first.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            print('is clicked');
-                          },
-                          child: Image.asset(
-                            'assets/images/third.png',
-                            height: 160,
-                            width: 160,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-
-                      ],
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/second.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/third.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/third.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/first.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print('is clicked');
+                      },
+                      child: Image.asset(
+                        'assets/images/second.png',
+                        height: 160,
+                        width: 160,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ],
-                )
+                ),
+              ),
             ),
+
+
           ],
         ),
       ),
