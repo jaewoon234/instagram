@@ -382,7 +382,7 @@ class Mynext extends StatelessWidget {
               color: Colors.black,
               child: SingleChildScrollView(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
                       width: 163,
@@ -393,9 +393,9 @@ class Mynext extends StatelessWidget {
                         },
                         child: Image.asset(
                           'assets/images/third.png',
-                          height: 160,
+                          height: 163,
                           width: 160,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
@@ -437,7 +437,7 @@ class Mynext extends StatelessWidget {
               color: Colors.black,
               child: SingleChildScrollView(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
                       width: 163,
