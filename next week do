@@ -4,7 +4,12 @@
 매운맛 영상보면서 로그인후 주사위 굴리는 코드 짜면서 위젯 공부
 navigater container colunm  builder snack bar 위젯 공부
 
+애로사항
+stateful 위젯 사용 미흡
+UI보고 따라함에 있어 트리구조 이해 미흡
+위젯들 미흡점 있음
+
 다음주
-매운맛 보면서 final const 변수공부
-future async away 공부
-반복문 공부 하면서 미흡한 부분 계속 공부
+미흡점 채우고 공부하기
+트리구조 이해
+매운맛 보면서 final const 공부
